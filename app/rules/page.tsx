@@ -45,7 +45,7 @@ const sections = [
     items: [
       { label: 'Touches par équipe', value: '3 maximum avant de renvoyer la balle (plus le contact du contre)' },
       { label: 'Touche consécutive', value: 'Interdit sauf au contre (deux joueurs peuvent toucher en simultané)' },
-      { label: 'Balle en jeu', value: 'Depuis le service jusqu'à la faute ou au point' },
+      { label: 'Balle en jeu', value: "Depuis le service jusqu'à la faute ou au point" },
       { label: 'Zone des 3 m', value: 'Un joueur arrière ne peut pas attaquer au-dessus du bord supérieur du filet depuis cette zone' },
     ],
   },

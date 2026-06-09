@@ -42,7 +42,7 @@ const timeline = [
     body: "Construction de salles modernes, diffusion télévisée accrue, développement du volley de plage. La discipline gagne en visibilité auprès du grand public français.",
   },
   {
-    period: '2010–aujourd'hui',
+    period: "2010–aujourd'hui",
     title: 'Volley-ball contemporain',
     body: "Le championnat national atteint un niveau compétitif élevé. La formation structurée, les centres d'excellence régionaux et la numérisation de l'entraînement transforment la pratique à tous les niveaux.",
   },
