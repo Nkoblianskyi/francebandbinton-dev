@@ -14,7 +14,7 @@ const sections = [
       { label: 'Hauteur du filet (hommes)', value: '2,43 m au centre' },
       { label: 'Hauteur du filet (femmes)', value: '2,24 m au centre' },
       { label: 'Zone de service', value: 'Zone derrière la ligne de fond, largeur 9 m' },
-      { label: 'Ligne d'attaque', value: 'Tracée à 3 m du filet, séparant avant et arrière' },
+      { label: "Ligne d'attaque", value: 'Tracée à 3 m du filet, séparant avant et arrière' },
     ],
   },
   {
@@ -33,9 +33,9 @@ const sections = [
     title: 'Déroulement du match',
     items: [
       { label: 'Format gagnant', value: '3 sets gagnants sur 5' },
-      { label: 'Points par set', value: '25 points (avec 2 points d'écart minimum)' },
-      { label: 'Tie-break (5e set)', value: '15 points (avec 2 points d'écart)' },
-      { label: 'Rotations', value: 'Dans le sens des aiguilles d'une montre après chaque changement de service' },
+      { label: 'Points par set', value: "25 points (avec 2 points d'écart minimum)" },
+      { label: 'Tie-break (5e set)', value: "15 points (avec 2 points d'écart)" },
+      { label: 'Rotations', value: "Dans le sens des aiguilles d'une montre après chaque changement de service" },
       { label: 'Temps-morts', value: '2 par set par équipe (30 secondes chacun)' },
     ],
   },
@@ -55,9 +55,9 @@ const sections = [
     items: [
       { label: 'Balle tenue', value: 'Balle portée, accompagnée ou retenue — faute immédiate' },
       { label: 'Double touche', value: 'Un même joueur touche la balle deux fois consécutivement (sauf au contre)' },
-      { label: 'Filet', value: 'Contact avec le filet lors d'une action de jeu (hors cheveux, vêtements légers)' },
+      { label: 'Filet', value: "Contact avec le filet lors d'une action de jeu (hors cheveux, vêtements légers)" },
       { label: 'Pied de ligne', value: 'Lors du service, le pied du serveur touche ou franchit la ligne de fond' },
-      { label: 'Pénétration', value: 'Franchissement du plan vertical du filet lors d'un contre, gênant l'adversaire' },
+      { label: 'Pénétration', value: "Franchissement du plan vertical du filet lors d'un contre, gênant l'adversaire" },
     ],
   },
 ]

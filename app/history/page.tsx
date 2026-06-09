@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Histoire du volley-ball en France',
-  description: 'Retracez l'histoire du volley-ball en France : des débuts au XXe siècle à l'essor contemporain du sport au niveau national et international.',
+  description: "Retracez l'histoire du volley-ball en France : des débuts au XXe siècle à l'essor contemporain du sport au niveau national et international.",
 }
 
 const timeline = [

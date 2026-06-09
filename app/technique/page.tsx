@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Technique & Entraînement — Volley-ball',
-  description: 'Conseils techniques, plans d'entraînement, exercices et tactiques pour progresser au volley-ball à tous les niveaux.',
+  description: "Conseils techniques, plans d'entraînement, exercices et tactiques pour progresser au volley-ball à tous les niveaux.",
 }
 
 const techniques = [
