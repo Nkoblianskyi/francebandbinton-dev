@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Règles du Jeu — Volley-ball',
-  description: 'Les règles officielles du volley-ball : terrain, équipe, déroulement du match, fautes et disciplines (salle et plage).',
+  title: 'Règles du Jeu — Badminton',
+  description: 'Les règles officielles du badminton : terrain, équipe, déroulement du match, fautes et disciplines (simple, double et para-badminton).',
 }
 
 const sections = [
@@ -10,73 +10,73 @@ const sections = [
     num: '01',
     title: 'Le terrain et les installations',
     items: [
-      { label: 'Dimensions du terrain', value: '18 × 9 mètres, divisé en deux zones égales' },
-      { label: 'Hauteur du filet (hommes)', value: '2,43 m au centre' },
-      { label: 'Hauteur du filet (femmes)', value: '2,24 m au centre' },
-      { label: 'Zone de service', value: 'Zone derrière la ligne de fond, largeur 9 m' },
-      { label: "Ligne d'attaque", value: 'Tracée à 3 m du filet, séparant avant et arrière' },
+      { label: 'Dimensions du terrain (double)', value: '13,40 × 6,10 mètres, divisé en deux zones égales' },
+      { label: 'Hauteur du filet (poteaux)', value: '1,55 m au-dessus du sol' },
+      { label: 'Hauteur du filet (centre)', value: '1,524 m au-dessus du sol' },
+      { label: 'Zone de service', value: 'Court de service délimité par les lignes latérales et la ligne courte de service' },
+      { label: 'Ligne de service longue', value: 'À 0,76 m du filet en simple, ligne arrière en double' },
     ],
   },
   {
     num: '02',
     title: 'La composition des équipes',
     items: [
-      { label: 'Joueurs sur le terrain', value: '6 par équipe simultanément' },
-      { label: 'Roster maximum', value: '12 joueurs par match' },
-      { label: 'Libero', value: '1 libero spécialisé en défense, maillot distinctif' },
-      { label: 'Capitaine', value: 'Désigné par le coach, interlocuteur des arbitres' },
-      { label: 'Remplaçants', value: '6 remplacements par set (hors libero)' },
+      { label: 'Simple', value: '1 joueur par équipe sur le terrain' },
+      { label: 'Double', value: '2 joueurs par équipe sur le terrain' },
+      { label: 'Double mixte', value: '1 homme et 1 femme par équipe' },
+      { label: 'Capitaine', value: 'Désigné avant le match, interlocuteur des arbitres' },
+      { label: 'Changements', value: 'Autorisés entre les manches et en cours de match (règles BWF)' },
     ],
   },
   {
     num: '03',
     title: 'Déroulement du match',
     items: [
-      { label: 'Format gagnant', value: '3 sets gagnants sur 5' },
-      { label: 'Points par set', value: "25 points (avec 2 points d'écart minimum)" },
-      { label: 'Tie-break (5e set)', value: "15 points (avec 2 points d'écart)" },
-      { label: 'Rotations', value: "Dans le sens des aiguilles d'une montre après chaque changement de service" },
-      { label: 'Temps-morts', value: '2 par set par équipe (30 secondes chacun)' },
+      { label: 'Format gagnant', value: '2 manches gagnantes sur 3' },
+      { label: 'Points par manche', value: "21 points (avec 2 points d'écart minimum)" },
+      { label: 'Prolongation', value: "En cas d'égalité à 20-20, jeu jusqu'à 2 points d'écart (max 30 points)" },
+      { label: 'Changement de côté', value: 'À la fin de chaque manche et quand un camp atteint 11 points en 3e manche' },
+      { label: 'Temps-morts', value: '1 minute entre les manches, pause technique à 11 points en 3e manche' },
     ],
   },
   {
     num: '04',
     title: 'Le jeu en cours',
     items: [
-      { label: 'Touches par équipe', value: '3 maximum avant de renvoyer la balle (plus le contact du contre)' },
-      { label: 'Touche consécutive', value: 'Interdit sauf au contre (deux joueurs peuvent toucher en simultané)' },
-      { label: 'Balle en jeu', value: "Depuis le service jusqu'à la faute ou au point" },
-      { label: 'Zone des 3 m', value: 'Un joueur arrière ne peut pas attaquer au-dessus du bord supérieur du filet depuis cette zone' },
+      { label: 'Service', value: 'Le volant doit être frappé en dessous de la taille, diagonalement vers le camp adverse' },
+      { label: 'Échange', value: "Le volant peut être frappé au-dessus du filet tant qu'il ne touche pas le sol" },
+      { label: 'Volant en jeu', value: "Depuis le service jusqu'à la faute ou au point marqué" },
+      { label: 'Zone de frappe', value: 'Le volant peut être frappé de n\'importe quelle hauteur une fois le service effectué' },
     ],
   },
   {
     num: '05',
     title: 'Les fautes courantes',
     items: [
-      { label: 'Balle tenue', value: 'Balle portée, accompagnée ou retenue — faute immédiate' },
-      { label: 'Double touche', value: 'Un même joueur touche la balle deux fois consécutivement (sauf au contre)' },
-      { label: 'Filet', value: "Contact avec le filet lors d'une action de jeu (hors cheveux, vêtements légers)" },
-      { label: 'Pied de ligne', value: 'Lors du service, le pied du serveur touche ou franchit la ligne de fond' },
-      { label: 'Pénétration', value: "Franchissement du plan vertical du filet lors d'un contre, gênant l'adversaire" },
+      { label: 'Volant hors limites', value: 'Le volant tombe en dehors des lignes du terrain — point pour l\'adversaire' },
+      { label: 'Filet', value: "Le volant ou la raquette touche le filet lors d'un échange — faute" },
+      { label: 'Double frappe', value: 'Un joueur touche le volant deux fois de suite — faute immédiate' },
+      { label: 'Service incorrect', value: 'Service au-dessus de la taille, hors zone ou pas en diagonale — faute' },
+      { label: 'Obstruction', value: "Gêner délibérément l'adversaire lors d'un coup — faute" },
     ],
   },
 ]
 
 const disciplines = [
   {
-    title: 'Volley-ball en salle',
-    desc: "Format classique à 6 contre 6. Terrain intérieur, rotations obligatoires, libero autorisé. Format utilisé dans tous les championnats officiels nationaux et internationaux.",
-    specs: ['6 joueurs de champ', '3 sets gagnants sur 5', 'Libero autorisé', 'Remplacements limités'],
+    title: 'Badminton en simple',
+    desc: "Format classique un contre un. Terrain plus étroit (lignes latérales intérieures). Exige endurance, vitesse et précision technique sur toute la surface.",
+    specs: ['1 joueur par camp', '2 manches gagnantes sur 3', 'Terrain 5,18 × 13,40 m', 'Service en diagonale'],
   },
   {
-    title: 'Volley-ball de plage',
-    desc: "Discipline olympique à 2 contre 2 sur sable. Pas de libero ni de rotations imposées. Sets en 21 points, tie-break à 15. Exigences physiques accrues par le terrain.",
-    specs: ['2 joueurs par équipe', 'Sets en 21 points', 'Pas de libero', 'Communication gestuelle obligatoire'],
+    title: 'Badminton en double',
+    desc: "Deux contre deux sur le terrain complet. Rotation de service entre partenaires, communication essentielle et jeu tactique au filet et au fond de court.",
+    specs: ['2 joueurs par camp', 'Manches à 21 points', 'Terrain 6,10 × 13,40 m', 'Rotation de service obligatoire'],
   },
   {
-    title: 'Volley-ball assis',
-    desc: "Discipline paralympique : les joueurs restent assis sur le terrain. Le filet est plus bas (1,15 m / 1,05 m) et les règles adaptées pour favoriser l'inclusion.",
-    specs: ['Filet plus bas', 'Joueurs assis', 'Ballon réglementaire standard', 'Catégories masculines et féminines'],
+    title: 'Para-badminton',
+    desc: "Discipline paralympique avec des classes selon le type de handicap (fauteuil, debout, déficience intellectuelle). Règles adaptées pour favoriser l'inclusion.",
+    specs: ['Classes WH, SL, SU, SH', 'Terrain et filet adaptés', 'Volant réglementaire', 'Catégories hommes et femmes'],
   },
 ]
 
@@ -87,7 +87,7 @@ export default function RulesPage() {
       <div className="relative h-[50vh] min-h-64 overflow-hidden bg-secondary">
         <Image
           src="/images/rules.png"
-          alt="Terrain de volley-ball"
+          alt="Terrain de badminton"
           fill
           priority
           className="object-cover"
@@ -98,7 +98,7 @@ export default function RulesPage() {
           <div className="max-w-4xl mx-auto px-6 pb-14 w-full">
             <p className="section-label mb-3">Règles &amp; disciplines</p>
             <h1 className="font-display text-[clamp(2.2rem,6vw,5rem)] font-black leading-tight tracking-tight text-foreground text-balance">
-              Les règles officielles du volley-ball
+              Les règles officielles du badminton
             </h1>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function RulesPage() {
       {/* Intro */}
       <div className="max-w-4xl mx-auto px-6 py-12">
         <p className="text-lg leading-relaxed text-muted-foreground border-l-4 border-primary pl-5 italic">
-          Le volley-ball est régi par des règles précises établies par la Fédération internationale (FIVB). Comprendre ces règles est essentiel pour jouer correctement, arbitrer ou simplement apprécier le jeu en spectateur.
+          Le badminton est régi par des règles précises établies par la Badminton World Federation (BWF). Comprendre ces règles est essentiel pour jouer correctement, arbitrer ou simplement apprécier le jeu en spectateur.
         </p>
       </div>
 
@@ -136,7 +136,7 @@ export default function RulesPage() {
         <div className="max-w-7xl mx-auto px-6">
           <p className="section-label mb-4">Disciplines</p>
           <h2 className="font-display text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-tight tracking-tight text-foreground mb-12 text-balance">
-            Les variantes du volley-ball
+            Les variantes du badminton
           </h2>
           <div className="grid md:grid-cols-3 gap-px bg-border">
             {disciplines.map((d) => (

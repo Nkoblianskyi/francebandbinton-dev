@@ -7,7 +7,7 @@ const sections = [
   {
     title: 'Responsable du traitement',
     body: [
-      "Le site francebandbinton.com est édité et exploité par une entité indépendante à but éditorial non commercial, dédiée à la diffusion de contenus relatifs au volley-ball en France.",
+      "Le site francebandbinton.com est édité et exploité par une entité indépendante à but éditorial non commercial, dédiée à la diffusion de contenus relatifs au badminton en France.",
       "Pour toute demande relative à vos données personnelles, vous pouvez nous contacter à l'adresse : info@francebandbinton.com.",
     ],
   },

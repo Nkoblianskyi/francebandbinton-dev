@@ -29,7 +29,7 @@ export default function AboutPage() {
             Qui sommes-nous&nbsp;?
           </h1>
           <p className="text-background/60 text-lg leading-relaxed max-w-2xl">
-            francebandbinton.com est un espace éditorial indépendant consacré au volley-ball en France — technique, histoire, règles et culture du jeu.
+            francebandbinton.com est un espace éditorial indépendant consacré au badminton en France — technique, histoire, règles et culture du jeu.
           </p>
         </div>
       </div>
@@ -40,17 +40,17 @@ export default function AboutPage() {
           <div>
             <p className="section-label mb-4">Notre mission</p>
             <h2 className="font-display text-[clamp(1.8rem,3.5vw,2.6rem)] font-black leading-tight tracking-tight text-foreground mb-6 text-balance">
-              Rendre le volley-ball accessible à tous
+              Rendre le badminton accessible à tous
             </h2>
             <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed text-sm">
               <p>
-                Créé par des passionnés de volley-ball, ce site a pour vocation de centraliser des ressources de qualité sur la pratique, la culture et le développement du sport en France.
+                Créé par des passionnés de badminton, ce site a pour vocation de centraliser des ressources de qualité sur la pratique, la culture et le développement du sport en France.
               </p>
               <p>
                 Nous croyons que la connaissance technique — correctement expliquée et illustrée — permet à chaque joueur, débutant comme confirmé, d'améliorer sa pratique et de mieux comprendre le jeu qu'il aime.
               </p>
               <p>
-                Notre contenu est écrit par des contributeurs qui pratiquent le volley-ball depuis de nombreuses années, avec une attention particulière portée à la précision des informations et à la pédagogie.
+                Notre contenu est écrit par des contributeurs qui pratiquent le badminton depuis de nombreuses années, avec une attention particulière portée à la précision des informations et à la pédagogie.
               </p>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function AboutPage() {
               { label: 'Indépendance éditoriale', body: "Aucune affiliation à une fédération, un club ou une marque. Notre seul objectif est d'informer." },
               { label: 'Précision technique', body: "Chaque article est relu et validé pour garantir l'exactitude des informations sportives." },
               { label: 'Accessibilité', body: "Nous écrivons pour tous les niveaux — du joueur débutant à l'entraîneur chevronné." },
-              { label: 'Passion du jeu', body: 'Le volley-ball est notre moteur. Cette passion transparaît dans chaque page du site.' },
+              { label: 'Passion du jeu', body: 'Le badminton est notre moteur. Cette passion transparaît dans chaque page du site.' },
             ].map((v, i, arr) => (
               <div key={v.label} className={`px-6 py-5 flex flex-col gap-1 ${i < arr.length - 1 ? 'border-b border-border' : ''}`}>
                 <div className="flex items-center gap-3">
@@ -80,24 +80,24 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6">
           <p className="section-label mb-4">Ce que nous couvrons</p>
           <h2 className="font-display text-[clamp(1.8rem,3.5vw,2.6rem)] font-black leading-tight tracking-tight text-foreground mb-12 text-balance">
-            Des ressources complètes sur le volley-ball
+            Des ressources complètes sur le badminton
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border">
             {[
               {
                 title: 'Technique',
                 href: '/technique',
-                desc: 'Réception, passe, service, smash, contre, défense — chaque geste expliqué avec des exercices.',
+                desc: 'Service, clear, smash, amorti, jeu au filet, déplacements — chaque geste expliqué avec des exercices.',
               },
               {
                 title: 'Règles',
                 href: '/rules',
-                desc: 'Les règles officielles de la FIVB, du terrain aux disciplines en passant par les fautes courantes.',
+                desc: 'Les règles officielles de la BWF, du terrain aux disciplines en passant par les fautes courantes.',
               },
               {
                 title: 'Histoire',
                 href: '/history',
-                desc: "L'évolution du volley-ball en France depuis les premières pratiques des années 1920 jusqu'à aujourd'hui.",
+                desc: "L'évolution du badminton en France depuis les premières pratiques des années 1920 jusqu'à aujourd'hui.",
               },
               {
                 title: 'Blog',

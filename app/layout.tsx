@@ -19,11 +19,11 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: 'France Badminton — Волейбол у Франції',
+    default: 'France Badminton — Badminton en France',
     template: '%s | France Badminton',
   },
   description:
-    'Усе про волейбол у Франції: техніка, тактика, правила гри, історія, спорядження та статті для любителів і гравців.',
+    'Le guide complet du badminton en France : technique, règles, histoire, équipement et articles pour tous les passionnés.',
   metadataBase: new URL('https://francebandbinton.com'),
   openGraph: {
     siteName: 'France Badminton',
@@ -59,12 +59,13 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             {/* Logo + wordmark */}
             <Link href="/" className="flex items-center gap-3 group" aria-label="France Badminton — accueil">
-              {/* Abstract volleyball logo mark */}
+              {/* Badminton racket & shuttlecock logo mark */}
               <span className="flex-shrink-0 w-8 h-8 relative" aria-hidden="true">
                 <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                  <circle cx="16" cy="16" r="13" stroke="currentColor" strokeWidth="1.5" className="text-foreground" />
-                  <path d="M3.5 16 Q10 8 16 16 Q22 24 28.5 16" stroke="currentColor" strokeWidth="1.5" fill="none" className="text-primary" />
-                  <path d="M16 3.5 Q24 10 16 16 Q8 22 16 28.5" stroke="currentColor" strokeWidth="1.5" fill="none" className="text-accent" />
+                  <ellipse cx="12" cy="10" rx="7" ry="9" stroke="currentColor" strokeWidth="1.5" className="text-foreground" />
+                  <line x1="12" y1="19" x2="20" y2="28" stroke="currentColor" strokeWidth="1.5" className="text-foreground" />
+                  <path d="M22 6 L26 2 M24 8 L28 6 M22 10 L27 9" stroke="currentColor" strokeWidth="1.2" className="text-primary" />
+                  <circle cx="26" cy="3" r="1.5" fill="currentColor" className="text-accent" />
                 </svg>
               </span>
               <span className="font-display text-lg font-semibold tracking-tight leading-none text-foreground">
@@ -120,7 +121,7 @@ export default function RootLayout({
                 <span className="font-display text-2xl font-bold tracking-tight text-background">
                   france <span className="opacity-50">bandbinton</span>
                 </span>
-                <p className="text-xs tracking-widest uppercase text-background/40">Volley-ball · France</p>
+                <p className="text-xs tracking-widest uppercase text-background/40">Badminton · France</p>
               </div>
 
               {/* Nav columns */}

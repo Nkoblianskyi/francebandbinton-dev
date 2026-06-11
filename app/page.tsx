@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { articles } from '@/lib/blog-data'
 
 export const metadata = {
-  title: 'France Badminton — Volley-ball en France',
+  title: 'France Badminton — Badminton en France',
   description:
-    'Le guide complet du volley-ball en France : technique, règles, histoire, équipement et actualités pour tous les passionnés.',
+    'Le guide complet du badminton en France : technique, règles, histoire, équipement et actualités pour tous les passionnés.',
 }
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -21,8 +21,8 @@ export default function HomePage() {
         {/* Right-side full-bleed image panel */}
         <div className="absolute inset-y-0 right-0 w-full lg:w-[52%] pointer-events-none">
           <Image
-            src="/images/hero-volleyball.png"
-            alt="Joueur de volley-ball en plein smash"
+            src="/images/hero-badminton.png"
+            alt="Joueur de badminton en plein smash"
             fill
             priority
             className="object-cover object-center"
@@ -47,10 +47,10 @@ export default function HomePage() {
           {/* Top bar */}
           <div className="flex items-center justify-between">
             <p className="text-[10px] tracking-[0.3em] uppercase text-background/40 font-sans">
-              France · Volley-ball
+              France · Badminton
             </p>
             <p className="text-[10px] tracking-[0.3em] uppercase text-background/40 font-sans hidden md:block">
-              Est. 1895 — présent
+              Est. 1873 — présent
             </p>
           </div>
 
@@ -70,7 +70,7 @@ export default function HomePage() {
             >
               <span className="block">Le</span>
               <span className="block text-primary" style={{ WebkitTextStroke: '0px' }}>
-                Volley
+                Badminton
               </span>
               <span className="block relative">
                 Français
@@ -85,7 +85,7 @@ export default function HomePage() {
 
             <p className="mt-10 text-base leading-relaxed text-background/55 max-w-sm font-sans">
               Technique, tactique, règles et histoire. Tout ce que vous devez
-              savoir sur le volley-ball en France.
+              savoir sur le badminton en France.
             </p>
 
             <div className="flex gap-3 flex-wrap mt-8">
@@ -109,10 +109,10 @@ export default function HomePage() {
           <div className="flex items-end justify-between gap-6 pt-10 border-t border-background/10">
             <div className="flex gap-8 md:gap-14 flex-wrap">
               {[
-                { value: '6', label: 'joueurs\npar équipe' },
-                { value: '3', label: 'touches\nmax' },
-                { value: '2,43 m', label: 'hauteur\ndu filet' },
-                { value: '25', label: 'points\npar set' },
+                { value: '2', label: 'joueurs\nen simple' },
+                { value: '21', label: 'points\npar manche' },
+                { value: '1,55 m', label: 'hauteur\ndu filet' },
+                { value: '13,4 m', label: 'longueur\ndu terrain' },
               ].map((s) => (
                 <div key={s.label}>
                   <p
@@ -146,10 +146,10 @@ export default function HomePage() {
                 Maîtrisez chaque geste du jeu
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Du service au smash, chaque action se travaille. Découvrez des plans d'entraînement, des conseils techniques et des exercices progressifs pour améliorer votre niveau.
+                Du service au smash, chaque coup se travaille. Découvrez des plans d'entraînement, des conseils techniques et des exercices progressifs pour améliorer votre niveau.
               </p>
               <ul className="flex flex-col gap-3 mb-8">
-                {["Postures et déplacements", "Service et réception", "Passe et attaque", "Plans d'entraînement hebdomadaires"].map((item) => (
+                {["Déplacements et position de base", "Service et retour de service", "Amorti, clear et lift", "Plans d'entraînement hebdomadaires"].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                     {item}
@@ -161,7 +161,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="relative aspect-[4/3] overflow-hidden">
-              <Image src="/images/technique.png" alt="Technique de passe au volley-ball" fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw" />
+              <Image src="/images/technique.png" alt="Technique de clear au badminton" fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw" />
               <div className="absolute inset-0 border border-border" />
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative aspect-[4/3] overflow-hidden order-2 md:order-1">
-              <Image src="/images/rules.png" alt="Terrain de volley-ball vue du dessus" fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw" />
+              <Image src="/images/rules.png" alt="Terrain de badminton vue du dessus" fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw" />
               <div className="absolute inset-0 border border-border" />
             </div>
             <div className="order-1 md:order-2">
@@ -182,14 +182,14 @@ export default function HomePage() {
                 Connaître les règles pour mieux jouer
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Volley-ball en salle, volley de plage, règles officielles et disciplines adaptées. Comprenez le cadre du jeu et ses nuances.
+                Simple, double, para-badminton : règles officielles et disciplines adaptées. Comprenez le cadre du jeu et ses nuances.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
-                  { n: '5', label: 'Sets max par match' },
-                  { n: '25', label: 'Points par set' },
-                  { n: '18×9m', label: 'Dimensions du terrain' },
-                  { n: '12', label: 'Joueurs par roster' },
+                  { n: '3', label: 'Manches max par match' },
+                  { n: '21', label: 'Points par manche' },
+                  { n: '6,1×13,4m', label: 'Dimensions du terrain' },
+                  { n: '2', label: 'Joueurs en double' },
                 ].map((s) => (
                   <div key={s.label} className="border border-border bg-background p-4">
                     <p className="font-display text-2xl font-black text-primary">{s.n}</p>
@@ -218,12 +218,12 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
             {[
-              { title: 'Le ballon', desc: "Sphérique, circumférence 65–67 cm, pression 0,300–0,325 kg/cm². Le choix du ballon influence la trajectoire et la vitesse de jeu.", number: '01' },
-              { title: 'Les chaussures', desc: "Une semelle amortissante et une tige stable sont essentielles pour protéger les genoux et chevilles lors des réceptions et sauts répétés.", number: '02' },
-              { title: 'Les genouillères', desc: "Indispensables pour la défense au sol. Elles permettent les plongeons sans risque et augmentent la confiance défensive.", number: '03' },
-              { title: 'Le filet', desc: "Hauteur réglementaire : 2,43 m pour les hommes et 2,24 m pour les femmes. Tension et qualité du filet affectent le jeu.", number: '04' },
-              { title: 'Les bandes de poignet', desc: "Protègent et stabilisent les poignets lors des réceptions de services puissants. Utilisées en salle comme en plage.", number: '05' },
-              { title: 'La tenue', desc: "Maillot respirant, short léger. En salle, les couleurs permettent d'identifier le libero et le capitaine.", number: '06' },
+              { title: 'La raquette', desc: "Légère (70–100 g), cadre en graphite ou aluminium, tension des cordes entre 8 et 12 kg. Le choix de la raquette influence puissance et contrôle.", number: '01' },
+              { title: 'Le volant', desc: "Plumes naturelles ou synthétiques. Les volants à plumes offrent une trajectoire plus stable ; les synthétiques durent plus longtemps à l'entraînement.", number: '02' },
+              { title: 'Les chaussures', desc: "Semelle non marquante, bonne adhérence latérale et amorti au talon. Essentielles pour les déplacements rapides et les changements de direction.", number: '03' },
+              { title: 'Le filet', desc: "Hauteur réglementaire : 1,55 m aux poteaux, 1,524 m au centre. Largeur de 6,1 m pour le double.", number: '04' },
+              { title: 'Le grip', desc: "Poignée antidérapante ou surgrip pour absorber la transpiration et garantir une prise ferme lors des frappes puissantes.", number: '05' },
+              { title: 'La tenue', desc: "Maillot respirant, short ou jupe léger. Les vêtements doivent permettre une amplitude de mouvement totale sans gêner les bras.", number: '06' },
             ].map((item) => (
               <div key={item.number} className="bg-background p-8 flex flex-col gap-3">
                 <span className="font-display text-4xl font-black text-border leading-none">{item.number}</span>
@@ -242,17 +242,17 @@ export default function HomePage() {
             <div>
               <SectionLabel>04 — Histoire</SectionLabel>
               <h2 className="font-display text-[clamp(2rem,4vw,3.2rem)] font-black leading-tight tracking-tight text-background mb-5 text-balance">
-                Plus d'un siècle de volley-ball en France
+                Plus d'un siècle de badminton en France
               </h2>
               <p className="text-background/70 leading-relaxed mb-6">
-                Depuis son introduction en France dans les années 1920, le volley-ball a traversé des décennies de passion sportive, de structuration fédérale et de montée en puissance internationale.
+                Depuis son introduction en France au début du XXe siècle, le badminton a traversé des décennies de passion sportive, de structuration fédérale et de montée en puissance internationale.
               </p>
               <Link href="/history" className="inline-block text-sm tracking-widest uppercase text-background border-b border-background/40 pb-0.5 hover:border-background transition-colors">
                 Lire l'histoire complète
               </Link>
             </div>
             <div className="relative aspect-[4/3] overflow-hidden">
-              <Image src="/images/history.png" alt="Histoire du volley-ball en France" fill className="object-cover grayscale" sizes="(max-width:768px) 100vw, 50vw" />
+              <Image src="/images/history.png" alt="Histoire du badminton en France" fill className="object-cover grayscale" sizes="(max-width:768px) 100vw, 50vw" />
               <div className="absolute inset-0 bg-foreground/20" />
             </div>
           </div>
@@ -264,14 +264,14 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <SectionLabel>05 — Achievements</SectionLabel>
           <h2 className="font-display text-[clamp(2rem,4vw,3.2rem)] font-black leading-tight tracking-tight text-foreground mb-12 text-balance">
-            Le volley-ball français sur la scène mondiale
+            Le badminton français sur la scène mondiale
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { metric: "Championnats d'Europe", detail: "La France a participé à de nombreux championnats d'Europe masculins et féminins, atteignant plusieurs fois les phases finales." },
-              { metric: 'Ligue des Nations', detail: "La compétition annuelle FIVB voit les équipes françaises affronter les meilleures nations mondiales dans un format moderne et spectaculaire." },
-              { metric: 'Jeux Olympiques', detail: "La présence olympique du volley-ball français constitue l'un des sommets de la compétition internationale, un objectif pour chaque génération." },
-              { metric: "Coupes d'Europe de clubs", detail: "Les clubs français évoluent en compétitions continentales (CEV Champions League), confrontant les meilleurs clubs européens." },
+              { metric: "Championnats d'Europe", detail: "Les joueurs français participent régulièrement aux championnats d'Europe, avec des podiums en simple et en double mixte." },
+              { metric: 'Championnats du monde', detail: "La BWF World Championships rassemble chaque année les meilleurs joueurs mondiaux, dont les représentants tricolores." },
+              { metric: 'Jeux Olympiques', detail: "Le badminton est olympique depuis 1992. Les Jeux constituent l'objectif ultime pour chaque génération de joueurs français." },
+              { metric: 'Thomas & Uber Cup', detail: "Les compétitions par équipes nationales voient la France affronter les meilleures nations mondiales du badminton." },
             ].map((a) => (
               <div key={a.metric} className="border-t-2 border-primary pt-6">
                 <h3 className="font-display text-lg font-bold text-foreground mb-3 leading-snug">{a.metric}</h3>
@@ -291,9 +291,9 @@ export default function HomePage() {
               <h2 className="font-display text-3xl font-black leading-tight tracking-tight text-foreground mb-8">Le saviez-vous ?</h2>
               <div className="flex flex-col gap-6">
                 {[
-                  { q: 'Inventé en 1895', a: "William G. Morgan a créé le «mintonette» dans le Massachusetts. Le nom fut changé en «volley-ball» dès 1896 après la première démonstration publique." },
-                  { q: 'Le libero est né en 1998', a: "Ce poste défensif spécialisé, introduit par la FIVB, révolutionne la façon de défendre. Les compétitions européennes ont joué un rôle clé dans son développement." },
-                  { q: 'Le mot «volley» vient du latin', a: '"Volare" signifie "voler". Le nom fait référence à l\'action de maintenir la balle en l\'air sans la laisser toucher le sol.' },
+                  { q: 'Inventé vers 1873', a: "Le badminton tire son nom du château de Badminton, en Angleterre, où le jeu fut popularisé. Les règles modernes furent codifiées en 1877." },
+                  { q: 'Sport olympique depuis 1992', a: "Le badminton a fait ses débuts olympiques à Barcelone en 1992. Cinq épreuves sont aujourd'hui au programme : simple et double hommes, femmes et mixte." },
+                  { q: 'Le volant le plus rapide du sport', a: "Un smash peut dépasser 400 km/h, faisant du volant l'objet le plus rapide de tous les sports de raquette." },
                 ].map((f) => (
                   <div key={f.q} className="border-l-2 border-primary pl-5">
                     <p className="font-semibold text-foreground mb-1">{f.q}</p>
@@ -304,12 +304,12 @@ export default function HomePage() {
             </div>
             <div>
               <SectionLabel>Chiffres clés</SectionLabel>
-              <h2 className="font-display text-3xl font-black leading-tight tracking-tight text-foreground mb-8">Le volley en France</h2>
+              <h2 className="font-display text-3xl font-black leading-tight tracking-tight text-foreground mb-8">Le badminton en France</h2>
               <div className="flex flex-col gap-8">
                 {[
-                  { n: '200 000+', label: 'licenciés FFVB', detail: "La Fédération française de volley-ball compte parmi les fédérations sportives les plus dynamiques en termes de pratiquants licenciés." },
-                  { n: '6 000+', label: 'clubs affiliés', detail: "Des clubs répartis sur l'ensemble du territoire français, des petites communes aux grandes métropoles." },
-                  { n: '1936', label: 'création de la FFVB', detail: "L'une des premières fédérations de volley-ball fondées en Europe, pionnière du développement du sport en France." },
+                  { n: '170 000+', label: 'licenciés FFBaD', detail: "La Fédération française de badminton compte parmi les fédérations de raquette les plus dynamiques en France." },
+                  { n: '2 500+', label: 'clubs affiliés', detail: "Des clubs répartis sur l'ensemble du territoire français, des petites communes aux grandes métropoles." },
+                  { n: '1928', label: 'création de la FFBaD', detail: "L'une des premières fédérations de badminton fondées en Europe, pionnière du développement du sport en France." },
                 ].map((f) => (
                   <div key={f.n} className="flex gap-5 items-start">
                     <span className="font-display text-3xl font-black text-accent leading-none flex-shrink-0 w-28">{f.n}</span>

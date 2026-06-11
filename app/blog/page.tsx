@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { articles } from '@/lib/blog-data'
 
 export const metadata = {
-  title: 'Blog — Articles sur le volley-ball',
-  description: 'Articles, analyses et conseils sur le volley-ball en France : technique, tactique, histoire et culture du jeu.',
+  title: 'Blog — Articles sur le badminton',
+  description: 'Articles, analyses et conseils sur le badminton en France : technique, tactique, histoire et culture du jeu.',
 }
 
 export default function BlogPage() {
@@ -17,10 +17,10 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-6">
           <p className="section-label mb-3">Blog &amp; Articles</p>
           <h1 className="font-display text-[clamp(2.5rem,6vw,5rem)] font-black tracking-tight leading-tight text-foreground text-balance">
-            Chroniques du volley
+            Chroniques du badminton
           </h1>
           <p className="mt-4 text-muted-foreground max-w-xl leading-relaxed">
-            Technique, culture, tactique et histoire. Des articles approfondis pour tout passionné du volley-ball.
+            Technique, culture, tactique et histoire. Des articles approfondis pour tout passionné du badminton.
           </p>
         </div>
       </div>
